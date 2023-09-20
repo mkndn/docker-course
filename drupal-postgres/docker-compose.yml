@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  web:
+    image: drupal:10-apache-bullseye
+    ports:
+      - 8080:80
+    volumes:
+      - drupal-modules:/var/www/html/modules
+      - drupal-profiles:/var/www/html/profiles
+      - drupal-themes:/var/www/html/themes
+      - drupal-sites:/var/www/html/sites
+    restart: always
+
+  postgres:
+    image: postgres:16.0
+    environment:
+      POSTGRES_DB: drupal
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d
+    restart: always
+
+volumes:
+    drupal-modules:
+    drupal-profiles:
+    drupal-themes:
+    drupal-sites:
