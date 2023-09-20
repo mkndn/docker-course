@@ -23,6 +23,7 @@ services:
       POSTGRES_PASSWORD: pass
     volumes:
       - ./scripts:/docker-entrypoint-initdb.d
+      - drupal-data:/var/lib/postgresql/data
     restart: always
 
 volumes:
@@ -30,3 +31,4 @@ volumes:
     drupal-profiles:
     drupal-themes:
     drupal-sites:
+    drupal-data:

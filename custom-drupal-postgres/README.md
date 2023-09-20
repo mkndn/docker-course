@@ -55,3 +55,8 @@ but not the volumes, so on next `docker-compose up` everything will be as it was
 ## BONUS: Use MariaDB rather than Postgres
 
 In newer versions of Drupal, they've begun to prefer MySQL or MariaDB over Postgres. You could try installing it using the [recommendations guide on Drupal.org](https://www.drupal.org/docs/system-requirements/database-server-requirements).
+
+
+## References
+https://www.udemy.com/course/docker-mastery/learn/lecture/6775870#overview
+https://www.drupal.org/project/gin/git-instructions
