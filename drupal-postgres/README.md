@@ -14,3 +14,11 @@
 - Tip: Drupal setup will assume the database runs on localhost, which is incorrect. You'll need to change it under Advanced settings to the name of the Docker service you gave to postgres
 - Use Docker Hub documentation to figure out the right environment and volume settings
 - Extra Credit: Use volumes to store Drupal unique data
+
+References:
+https://hub.docker.com/_/drupal
+https://stackoverflow.com/questions/55741735/docker-compose-and-postgres-extensions
+https://www.postgresql.org/docs/current/sql-createextension.html
+https://www.udemy.com/course/docker-mastery/learn/lecture/6775804#overview
+
+
